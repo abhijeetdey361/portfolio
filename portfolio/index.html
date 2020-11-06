@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- TODO: Change the font of website from google font(https://fonts.google.com/) -->
+<!-- TODO: Change the color scheme as you like -->
+<!-- TODO: Enable smooth scrolling -->
+<!-- TODO: Add scroll to top button -->
+<!-- TODO: Add a background image with 50% opacity on homepage -->
+<!-- TODO: Update fields with your details -->
+<head>
+    <title>Responsive Web Design Projects - Build a Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#" id="myself" class="nav-link"><strong>Abhijeet Dey <i class="fa fa-puzzle-piece"></i></strong></a>
+            <a href="#welcome-section" class="nav-link">home</a>
+            <a href="#aboutme" class="nav-link">About me</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link">work</a>
+            <a href="#contact-form" class="nav-link">contact</a>
+           
+
+        </nav>
+    </header>
+    <button onclick="topFunction()" id="scrollButton" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <main>
+        <section id="welcome-section" class="main-section">
+            <div><h1>Hey i'm Abhijeet Dey.</h1>
+                <p id="typewritercontent"></p> <!-- TODO: Make this as typewriter effect - hint(https://github.com/tameemsafi/typewriterjs) -->
+                <a href="#contacts"><i class="arrow down"></i></a> <!-- TODO: change the text to go down arrow icon -->
+            </div>
+            <div id="image"><img id="photo" src="./image/WhatsApp Image 2020-10-31 at 11.06.13.jpeg">
+            </div>
+        </section>
+        <!-- TODO: Introduce a About me section here and the button in nav tag: this section should have your image and a paragraph about you.-->
+
+        <!-- TODO: Introduce a Education section here and the button in nav tag -->
+        <section id="aboutme" class="main-section">
+        <h1>About Me</h1>
+            <div class="right-align">
+                <h3><p>I'm from Prayagraj, Uttar Pradesh.
+                       I'm currently pursuing my bachelor degree 
+                       in Electronics and Tele-Communication Engineering from Kalinga Institute of 
+                       Industrial Technology in Bhubneshwar, Odhisha.
+                       Completed my schooling from St. Joseph's College, Prayagraj.
+                       I'm determined and persistent to achieve my goals.
+                       I have a good sense of humour and possess great communication skills.   
+                       I love to play table tennis and i'm quite competetive. 
+                    
+               </p>
+               <p><h2>My skills are:</h2>
+                <br>
+                   <ul>
+                       <li>Coding in core JAVA</li>
+                       <li>HTML and CSS Development</li>
+                       <li>JavaScript Development</li>
+                       <li>Internet of Things</li>
+                       <li>Core Electronics</li>
+                    </ul>
+              </p>
+            </h3>   
+            </div>
+            <div class="left-align">
+                <img id="photo" src="./image/WhatsApp Image 2020-10-31 at 12.12.29.jpeg">
+            </div>           
+        </section>
+        <section id="education">
+            <h1>Qualification</h1>
+            <div id="info">
+                <ul>
+                <li>Class 10<sup>th</sup>: 90%</li>
+                <li>Class 12<sup>th</sup>: 88%</li>
+                <li>B.tech: 9.38 CGPA</li>
+            </ul>
+        </div>
+        </section>
+
+        <section id="projects" class="main-section">
+            <h2>These are some of my projects..</h2>
+            <div id="projects-content">
+                <a href="https://github.com/abhijeetdey361/survey-form/" class="project-tile" target="_blank"><img
+                        src="./image/WhatsApp Image 2020-10-18 at 21.27.48.jpeg"
+                        alt="tribute page preview">
+                    Survey Form</a>
+                <a href="https://github.com/abhijeetdey361/" class="project-tile" target="_blank"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642771/7cd6a0c4-6171-11e6-87fb-915f6084d104.png"
+                        alt="random quote machine preview">Random quote machine</a>
+                <a href="https://github.com/abhijeetdey361/" class="project-tile" target="_blank"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642772/7d02406c-6171-11e6-8c79-40a2933163dc.png"
+                        alt="javascript calculator preview">JavaScript calculator</a>
+                <a href="https://github.com/abhijeetdey361/" class="project-tile" target="_blank"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642773/7d08cb94-6171-11e6-8c45-22e7cf64683e.png"
+                        alt="map data across the globe preview">Map data across the globe</a>
+                <a href="https://github.com/abhijeetdey361/" class="project-tile" target="_blank"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642774/7d091806-6171-11e6-8d47-ecf2f2833fe2.png"
+                        alt="wikipedia viewer preview">Wikipedia viewer</a>
+                <a href="https://codepen.io/FreeCodeCamp/pen/KzXQgy" class="project-tile" target="_blank"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642775/7d354304-6171-11e6-8b56-66eee4681d88.png"
+                        alt="tic tac toe game preview">Tic Tac Toe game</a>
+            </div>
+            <a href="https://github.com/abhijeetdey361/" target="_blank" id="show-all">show all</a>
+            <!-- TODO: show all button should re-direct you to github in new tab -->
+        </section>
+
+        <!-- TODO: Introduce a contact me form here, (name, email, mobile, reason to contact?) - onclick -> submit, store value in localStorage -->
+        <section id="contact-form">
+           <h1><strong>Contact Me</strong></h1>
+           <form id="contact-form">
+            <div>
+                <div class="right_align">
+                    <label for="name"><strong>Name: </strong></label>
+                </div>
+                <div class="left_align">
+                    <div>
+                        <input id="name" type="text" placeholder="Enter your name" >
+                    </div>
+                </div>       
+            </div>
+            <div>
+                <div class="right_align">
+                        <label for="email"><strong>Email: </strong></label>
+                </div>
+                <div class="left_align">
+                    <div>
+                        <input id="email" type="email" placeholder="Your Email" >
+                    </div>
+                </div>       
+            </div>
+            <div>
+                <div class="right_align">
+                    <label for="number"><strong>Phone Number:</strong></label>     
+                </div>
+                <div class="left_align">
+                    <div>
+                        <input id="number" type="number" placeholder="Your Phone Number" >
+                    </div>
+                </div>       
+            </div>
+            <div>
+                <div class="right_align">
+                    <label for="textarea"><span><strong>Reason to Contact?</strong></label>
+                </div>
+                <div class="left_align">
+                    <div>
+                        <textarea id="textarea" rows="3" cols="30" placeholder="Provide your reason here..." ></textarea>
+                    </div>
+                </div>
+            </div>
+             <button type="submit">Submit</button>
+           </form>
+        </section>
+        <section id="contacts" class="main-section">
+            <h2>Let's work together...</h2>
+            <p>Follow Me</p>
+            <!-- TODO: change all social link to use font-awesome icon(https://fontawesome.com/v4.7.0/get-started/) -->
+            <div id="contacts-content">
+                <div id="insta"><a href="https://www.instagram.com/abhijeetdey361/" target="_blank" class="fa fa-instagram"></a></div>
+                <div id="github"><a href="https://github.com/abhijeetdey361/" target="_blank" id="profile-link"
+                     class="fa fa-github" aria-hidden="true"></a>
+                </div>
+                <div id="snapchat"><a href="https://accounts.snapchat.com/accounts/welcome" class="fa fa-snapchat-ghost"></a></div>
+                <div id="email"><a href="mailto:abhijeetdey361@gmail.com" class="fa fa-google" target="_blank"></a></div>
+                <div id="tel"><a href="tel:9861664662" target="_blank" class="fa fa-phone" aria-hidden="true"></a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><em>**All the details provided are authentic..</em></p>
+        <p>© Copyright</p>
+    </footer>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
