@@ -8,16 +8,40 @@ body {
   margin: 0px;
   padding: 0px;
 }
-#image img{
-  padding-left: 700px;
-  width: 20%;
-  height: 10%;
-  display: block;
-  margin-top: -300px;
+#main{
+  text-align: center;
+  padding-top: 100px;
 }
+#main-left{
+  text-align: left;
+  padding-right: 50px;
+  vertical-align: top;
+  display: inline-block;
+
+}
+#main-right{
+  text-align: right;
+  vertical-align: top;
+  display: inline-block;
+  max-width: 40%;
+  max-height: 10%;
+  padding-right: 100px; 
+  padding-left: 100px;
+}
+
+ #main-right img{
+ 
+  max-width: 50%;
+ 
+  display: block;
+  
+   border: 5px solid black;
+   border-radius: 10px;
+
+} 
 #photo{
   border-image: 10px solid black;
-}
+} 
 #aboutme h1{
   padding-top: 20px;
   text-align: left;
@@ -36,6 +60,9 @@ body {
   display: block;
   padding-left: 600px;
 }
+.left-align{
+  border: 2px solid white;
+}
 .left-align img{
   padding-left: 100px;
   width: 20%;
@@ -43,6 +70,7 @@ body {
   display: block;
   margin-top: -500px;
   padding-bottom: 10px;
+  
 }
 #education{
   
@@ -139,19 +167,19 @@ header {
 
 #welcome-section {
   font-size: xx-large;
-    text-align: left;
-    padding-left: 150px;
-    padding-top: 100px;
+    /* text-align: left; */
+    /* padding-left: 150px;
+    padding-top: 100px; */
 }
 
-h2 {
+/* h2 {
   text-align: center;
   padding-top: 20px;
-}
+} */
 
-#welcome-section {
+/* #welcome-section {
   min-height: 100px;
-}
+} */
 
 #projects {
   background-color: hsl(var(--theme-color2, 100), 50%, 100%);
@@ -283,10 +311,13 @@ footer {
   text-align: center;
 }
 
-@media(max-width: 700px) {
+/* @media(max-width: 700px) {
   #projects-content a {
     width: 240px;
     height: 168px;
+  }
+  [class*="col-"] {
+    width: 100%;
   }
 }
 
@@ -324,7 +355,7 @@ footer {
   }
   #contacts {
     min-height: 500px;
-  }
+  } */
 }
 .arrow {
   border: solid black;
@@ -356,4 +387,9 @@ footer {
 
 #scrollButton:hover {
   background-color: #555; 
+}
+@media only screen and (max-width: 100px){
+   body{
+    width: 100%;
+  }
 }
