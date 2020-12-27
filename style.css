@@ -37,34 +37,38 @@ body {
    border-radius: 10px;
 
 } 
-#aboutme h1{
-  padding-top: 20px;
-  text-align: left;
-  padding-left: 600px;
-
+#aboutme h4{
+  font-weight: 100;
+  color: rgb(26, 7, 7);
 }
-#aboutme h2{
-  padding-top: 20px;
-  /* text-align: left; */
-  padding-right: 620px;
-
+#about-me-center{
+  text-align: center;
+}
+.left-align{
+  vertical-align: top;
+  text-align: right;
+  display: inline;
+  padding-right: 100px;
+}
+.left-align img{
+  
+  margin-left: 100px;
+  width: 10%;
+  display: inline-block;
+  /* margin-top: -500px; */
+  /* margin-bottom: 10px; */
+  border: 4px solid white;
+  border-radius: 100px;
 }
 .right-align{
+  vertical-align: top;
   text-align: left;
   padding-right: 100px;
-  display: block;
-  padding-left: 600px;
+  display: inline-block;
+  padding-left: 100px;
 }
 
-.left-align img{
-  padding-left: 100px;
-  width: 20%;
-  height: 10%;
-  display: block;
-  margin-top: -500px;
-  padding-bottom: 10px;
-  
-}
+
 #education{
   
   padding-left: 600px;
